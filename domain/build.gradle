@@ -1,0 +1,15 @@
+description = 'Domain module - Shared entities and repositories'
+
+// Make this module a library (not an executable Spring Boot application)
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+dependencies {
+    implementation 'org.springframework:spring-context'
+    implementation 'org.slf4j:slf4j-api'
+}

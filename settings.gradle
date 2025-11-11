@@ -1,0 +1,6 @@
+rootProject.name = 'automation-alarm'
+
+include 'domain'
+include 'consumer'
+include 'producer'
+include 'web'

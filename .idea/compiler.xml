@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.42/8365263844ebb62398e0dc33057ba10ba472d3b8/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="automation-alarm.consumer.main" />
+        <module name="automation-alarm.domain.main" />
+        <module name="automation-alarm.producer.main" />
+        <module name="automation-alarm.web.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="automation-alarm.consumer" options="-parameters" />
+      <module name="automation-alarm.consumer.main" options="-parameters" />
+      <module name="automation-alarm.consumer.test" options="-parameters" />
+      <module name="automation-alarm.domain" options="-parameters" />
+      <module name="automation-alarm.domain.main" options="-parameters" />
+      <module name="automation-alarm.domain.test" options="-parameters" />
+      <module name="automation-alarm.producer" options="-parameters" />
+      <module name="automation-alarm.producer.main" options="-parameters" />
+      <module name="automation-alarm.producer.test" options="-parameters" />
+      <module name="automation-alarm.web" options="-parameters" />
+      <module name="automation-alarm.web.main" options="-parameters" />
+      <module name="automation-alarm.web.test" options="-parameters" />
+      <module name="automation.alarm.consumer.main" options="-parameters" />
+      <module name="automation.alarm.consumer.test" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="consumer.main" options="-parameters" />
+      <module name="consumer.test" options="-parameters" />
+      <module name="domain" options="-parameters" />
+      <module name="domain.main" options="-parameters" />
+      <module name="domain.test" options="-parameters" />
+      <module name="producer" options="-parameters" />
+      <module name="producer.main" options="-parameters" />
+      <module name="producer.test" options="-parameters" />
+      <module name="web" options="-parameters" />
+      <module name="web.main" options="-parameters" />
+      <module name="web.test" options="-parameters" />
+    </option>
+  </component>
+</project>
