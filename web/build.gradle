@@ -1,9 +1,0 @@
-description = 'Web module - REST API application'
-
-dependencies {
-    implementation project(':domain')
-    implementation project(':producer')
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.kafka:spring-kafka'
-    testImplementation 'org.springframework.kafka:spring-kafka-test'
-}

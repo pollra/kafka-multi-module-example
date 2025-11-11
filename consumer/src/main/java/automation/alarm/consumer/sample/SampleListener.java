@@ -18,28 +18,25 @@ public class SampleListener {
     @KafkaListener(topics = "alarm-topic", groupId = "alarm-consumer-group")
     public void consumeAlarm(String message) {
         try {
-            log.info("Received Kafka message: {}", message);
+            log.info("Kafka 메시지 수신: {}", message);
 
             JsonNode jsonNode = objectMapper.readTree(message);
             String timestamp = jsonNode.get("timestamp").asText();
             String userAgent = jsonNode.get("userAgent").asText();
             String userName = jsonNode.get("userName").asText();
 
-            log.info("Processed alarm - timestamp: {}, userAgent: {}, userName: {}",
+            log.info("알람 처리 완료 - timestamp: {}, userAgent: {}, userName: {}",
                 timestamp, userAgent, userName);
 
-            // 여기에 알람 처리 로직을 추가하세요
             // 예: 데이터베이스 저장, 외부 API 호출, 알림 전송 등
             processAlarm(timestamp, userAgent, userName);
 
         } catch (Exception e) {
-            log.error("Failed to process Kafka message: {}", message, e);
+            log.error("Kafka 메시지 처리 실패: {}", message, e);
         }
     }
 
     private void processAlarm(String timestamp, String userAgent, String userName) {
-        // 실제 알람 처리 로직 구현
-        log.info("Processing alarm for user: {} at {}", userName, timestamp);
-        // TODO: 실제 비즈니스 로직 추가
+        log.info("사용자 알람 처리 중 - 사용자: {}, 시간: {}", userName, timestamp);
     }
 }

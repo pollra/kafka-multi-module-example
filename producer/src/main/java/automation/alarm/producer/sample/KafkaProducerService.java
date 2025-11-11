@@ -22,10 +22,10 @@ public class KafkaProducerService {
         try {
             String message = objectMapper.writeValueAsString(sampleVO);
             kafkaTemplate.send(TOPIC, message);
-            log.info("Kafka message sent: {}", message);
+            log.info("Kafka 메시지 전송 완료: {}", message);
         } catch (JsonProcessingException e) {
-            log.error("Failed to serialize message", e);
-            throw new RuntimeException("Failed to send Kafka message", e);
+            log.error("메시지 직렬화 실패", e);
+            throw new RuntimeException("Kafka 메시지 전송 실패", e);
         }
     }
 }

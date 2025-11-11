@@ -29,7 +29,7 @@ public abstract class DomainException extends RuntimeException {
 	}
 
 	public DomainException(BusinessCode businessCode, ExceptionCode exceptionCode, String[] arguments) {
-		// ex: USER.NOT_FOUND.[arg1, arg2]
+		// 예시: USER.NOT_FOUND.[arg1, arg2]
 		super(businessCode.name() + '.' + exceptionCode.name() + '.' + Arrays.toString(arguments));
 		this.businessCode = businessCode;
 		this.exceptionCode = exceptionCode;
